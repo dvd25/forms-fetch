@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+    <title> fetch example</title>
+</head>
+
+<body>
+    <h1> practice</h1>
+    <script type="text/javascript">
+        var apiUrl = 'http://localhost:3000/authors/';
+        fetch(apiUrl).then(response => {
+            return response.json(); }).then(data => {
+            // Work with JSON data here
+                //const obj = JSON.parse(data);
+                //console.log(obj.name);
+                //console.log(obj.genre);
+                console.log("Length" + data.length);
+                var output =  "";
+                for (let i = 0; i < data.length; i++){
+                    console.log((data[i]));
+                    //document.getElementById("p1").innerHTML = JSON.stringify(data[i]);
+                    x = data[i].name;
+                    y = data[i].genre;
+                    output += x;
+                    output += y;
+                    //document.getElementById("p1").innerHTML = (data[i].name);
+                }
+                document.getElementById("p1").innerHTML = output;
+        }).catch(err => {
+            // Do something for an error here
+            console.log("error")
+        });
+    </script>
+
+    <p id = p2> </p>
+    <p id = p1> </p>
+
+</body>
+
+</html>

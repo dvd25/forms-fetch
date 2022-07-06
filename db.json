@@ -1,0 +1,59 @@
+{
+  "authors": [
+    {
+      "name": "Michiel Mulders",
+      "genre": "nonfiction",
+      "id": 1
+    },
+    {
+      "name": "Gregory Salis",
+      "genre": "nonfiction",
+      "id": 2
+    },
+    {
+      "name": "edfa",
+      "genre": "dafa",
+      "id": 9
+    },
+    {
+      "name": "edfa",
+      "genre": "dafa",
+      "id": 10
+    },
+    {
+      "name": "David Hoang",
+      "genre": "Fiction",
+      "id": 11
+    },
+    {
+      "name": "David",
+      "genre": "",
+      "id": 12
+    },
+    {
+      "name": "David",
+      "genre": "Hoang",
+      "id": 13
+    },
+    {
+      "name": "Jo",
+      "genre": "Batkin",
+      "id": 14
+    },
+    {
+      "name": "AA",
+      "genre": "Fantasy",
+      "id": 15
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "some title",
+      "authorId": 1
+    }
+  ],
+  "library": {
+    "name": "City library"
+  }
+}

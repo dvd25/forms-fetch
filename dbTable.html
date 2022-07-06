@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+    <title> fetch example</title>
+    <script src="dbScript.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class = "navbar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./form.html">Form</a>
+            <li><a class="active" href="./dbTable.html">Database</a></li>
+        </ul>
+    </nav>
+    <h1> Author Table</h1>
+
+    <h2> Add an entry</h2>
+    <form method = "post" action="http://localhost:3000/authors/">
+        <label for="name1">Name in here:</label><br>
+        <input type="text" id="name1" name="name" value=""><br>
+
+        <label for="genre1">Genre in here:</label><br>
+        <input type="text" id = "genre1" name="genre" value=""><br><br>
+
+        <input type="submit" value="Submit">
+        <br><br>
+    </form>
+
+    <table id = t1>     
+    </table>   
+    <button onclick = "fetchAllAuthors()"> Reload table</button> 
+</body>
+
+</html>
